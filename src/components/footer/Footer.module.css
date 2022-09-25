@@ -1,11 +1,20 @@
-/* No CSS *//*# sourceMappingURL=Footer.module.css.map */
 .footer {
-    background-color:rgb(90, 2, 98);
-    color: #fff;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    
-  }
+  background-color: var(--dark-blue);
+  color: #fff;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8rem;
+}
+
+.footer p {
+  color: #fff;
+}
+/*# sourceMappingURL=Footer.module.css.map */
