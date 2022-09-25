@@ -1,0 +1,121 @@
+.slider {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 600px) {
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slide img {
+  height: 100%;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  width: 50%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 11000;
+  -webkit-animation: slide-up 1s ease 0.5s;
+          animation: slide-up 1s ease 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.content h2 {
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 80%;
+  }
+}
+
+.content > * {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  z-index: 2000;
+}
+
+.current {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.current .content {
+  opacity: 1;
+}
+
+.arrow {
+  border: 2px solid #7c0982;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.arrow:hover {
+  background: #fff;
+}
+
+.next {
+  right: 1.5rem;
+  color: #ea00ff;
+}
+
+.prev {
+  left: 1.5rem;
+  color: #ea00ff;
+}
+
+hr {
+  height: 2px;
+  background: #fff;
+  width: 50%;
+}
+/*# sourceMappingURL=Slider.css.map */
