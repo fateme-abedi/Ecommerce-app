@@ -1,0 +1,130 @@
+.checkout-container{
+    padding:10px 20px;
+
+    
+}
+.checkout-row{
+    display:flex;
+    justify-content: flex-start;
+    margin: 50px 0;
+    gap: 30px;
+    
+
+    .checkout-col{
+        
+        margin-left:20px; 
+        background: rgba(#083612,0.3);
+        padding:25px 30px;
+        width:100%;
+        color: #083612;
+        display: flex;
+        flex-direction: column;
+
+        &_form{
+            flex:1;
+        }
+
+        button{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            margin: 35px auto 0;
+            padding:16px 13px;
+            background: #af37fa;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            text-transform: uppercase;
+            width: 70%;
+            font-size: 25px;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover{
+                transform:scale(1.1)
+            }
+            
+        }
+
+        &_input{
+            margin-bottom: 20px;
+            label{
+                font-size: 18px;
+                margin-right: 10px;
+                
+            }
+
+            input{
+                padding:7px 3px;
+                border-radius: 5px;
+                border:none;
+                font-size:16px ;
+            }
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom: 10px;
+            color: #083612;
+            text-transform: uppercase;
+            letter-spacing:1.5px;
+
+            span{
+             color: #af37fa;
+            }
+        }
+
+        &_totalInfo{
+            padding:8px 12px;
+            flex:1;
+            
+        }
+
+        &_totalContent{
+            padding:18px 15px;
+            border: 1px solid #f2d308;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+
+            p{
+                font-size: 20px;
+                flex: 1;
+            }
+
+            span{
+                font-size: 16px;
+                color: #af37fa;
+                font-weight: bold;
+            }
+        }
+
+        &_total{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-top: 35px;
+            padding:18px 15px;
+            background: #083612;
+            border-radius: 8px;
+            
+
+            p{font-weight: bold;
+
+                font-size: 25px;
+                color: #fff;
+            }
+
+            span{
+                font-size: 22px;
+                color: #af37fa;
+                font-weight: bold;
+            }
+        }
+    
+    
+    
+    }
+    }
