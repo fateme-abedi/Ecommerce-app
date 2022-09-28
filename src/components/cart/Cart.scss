@@ -1,0 +1,104 @@
+.cart{
+    margin: 25px 10px;
+    padding: 30px 45px;
+
+    &-col{
+
+        border:3px solid #083612;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: rgba(#083612,0.3);
+
+        h1{
+            text-align: center;
+            font-size: 35px;
+            letter-spacing:1.2px;
+            color: #083612;
+        }
+        
+
+        
+        &_top{
+            text-align:right;
+            margin-top: -5px;
+           
+            button{
+                background: #af37fa;
+                color: #f2d308;
+                outline:none;
+                border: none;
+                padding:8px 12px;
+                font-size: 25px;
+                cursor: pointer;
+
+                &:hover,
+                &:active{
+                    color:#af37fa ;
+                    background: #f2d308;
+                }
+
+            }
+        }
+
+        &_middle{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px 15px;
+        }
+
+
+        &_left{
+            width:250px;
+            height:auto;
+
+            img{
+                width:100%;
+
+            }
+        }
+
+        &_right{
+            padding:10px 15px;
+            padding-right:23px ;
+
+            h2{
+                font-size: 26px;
+                letter-spacing:1.2px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            span{
+                margin-top: 30px;
+                padding: 10px  15px;
+                border:1px solid #083612;
+                font-size: 20px;
+                color: #af37fa;
+                width:40px;
+                border-radius:10px
+            }
+        }
+
+       
+
+    }
+
+    &-checkout{
+        margin-top: 30px;
+      
+        background: #083612;
+        padding: 15px 11px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #fff; 
+        display: inline-block;
+        float: right;
+
+        &:hover{
+            background: rgba(#083612,0.3);
+            color: #fff; 
+        }
+    }
+
+}
